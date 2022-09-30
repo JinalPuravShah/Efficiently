@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="Efficiently AUTOMATION SUITE">
+
+
+<test name ="Different Feature">
+
+<classes>
+<class name ="com.Efficiently.qa.testcases.LoginPageTest"></class>
+
+
+
+
+
+</classes>
+
+</test>
+</suite>

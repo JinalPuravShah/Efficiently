@@ -31,20 +31,18 @@ import com.Efficiently.qa.pages.LoginPage;
 		public void loginTest() throws IOException, InterruptedException {
 			
 				homePage = loginPage.Login(prop.getProperty("Email"),prop.getProperty("Password"));
-			
+				homePage = loginPage.Scenario2();
+				homePage =loginPage.Scenario3();
 				// TODO Auto-generated catch block
 				
 			}
 		
 		
-		
-		
-		
-		
-		@AfterMethod
-		public void tearDown() {
+		//
+	//@AfterMethod
+		//public void tearDown() {
 		//driver.quit();
+		
 		}
-	}
 
 

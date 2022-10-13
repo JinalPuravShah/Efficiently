@@ -1,17 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-12T11:58:22 IST" name="Efficiently AUTOMATION SUITE" finished-at="2022-10-12T11:59:51 IST" duration-ms="89832">
+  <suite started-at="2022-10-13T10:42:23 IST" name="Efficiently AUTOMATION SUITE" finished-at="2022-10-13T10:43:03 IST" duration-ms="40314">
     <groups>
     </groups>
-    <test started-at="2022-10-12T11:58:22 IST" name="Different Feature" finished-at="2022-10-12T11:59:51 IST" duration-ms="89832">
+    <test started-at="2022-10-13T10:42:23 IST" name="Different Feature" finished-at="2022-10-13T10:43:03 IST" duration-ms="40314">
       <class name="com.Efficiently.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Efficiently.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-12T11:58:22 IST" name="SetUp" finished-at="2022-10-12T11:58:33 IST" duration-ms="10986" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Efficiently.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-13T10:42:23 IST" name="SetUp" finished-at="2022-10-13T10:42:39 IST" duration-ms="15906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="loginTest()[pri:1, instance:com.Efficiently.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-12T11:58:33 IST" name="loginTest" finished-at="2022-10-12T11:59:51 IST" duration-ms="78769" status="PASS">
+        <test-method signature="loginTest()[pri:1, instance:com.Efficiently.qa.testcases.LoginPageTest@4d5650ae]" started-at="2022-10-13T10:42:39 IST" name="loginTest" finished-at="2022-10-13T10:43:03 IST" duration-ms="24329" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-EVN0A8MU', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0f13bf4b0eb4b210280873d011794083, findElement {using=xpath, value= //*[text()=' Create new project ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ACC-152\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51066/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f13bf4b0eb4b210280873d011794083]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-EVN0A8MU', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0f13bf4b0eb4b210280873d011794083, findElement {using=xpath, value= //*[text()=' Create new project ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ACC-152\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51066/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f13bf4b0eb4b210280873d011794083
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.Efficiently.qa.pages.LoginPage.Login(LoginPage.java:112)
+at com.Efficiently.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+... 37 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->

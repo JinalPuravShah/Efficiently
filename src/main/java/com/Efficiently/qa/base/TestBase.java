@@ -30,7 +30,9 @@ import com.Efficiently.qa.testdata.Testutil;
 			public TestBase() throws java.io.IOException  {
 				try {
 					prop = new Properties();
-					FileInputStream ip = new FileInputStream("C:\\Users\\ACC-152\\eclipse-workspace\\Efficiently\\src\\main\\java\\com\\Efficiently\\qa\\Config\\config.properties");
+					String ProjectPath = System.getProperty("user.dir");
+					
+					FileInputStream ip = new FileInputStream(ProjectPath+"\\Files\\config.properties");
 				prop.load(ip);
 				
 				} catch(FileNotFoundException e) {
@@ -45,7 +47,8 @@ import com.Efficiently.qa.testdata.Testutil;
 			public static void initialization() {
 			String browserName = prop.getProperty("browser");
 			if(browserName.equals("Chrome")) {
-				System.setProperty("webdriver.chrome.driver","C:\\Users\\ACC-152\\Desktop\\SELENIUM\\Chromedriver\\chromedriver.exe");
+				String ProjectPath = System.getProperty("user.dir");
+				System.setProperty("webdriver.chrome.driver",ProjectPath+"\\Files\\chromedriver.exe");
 				driver = new ChromeDriver();
 			}
 			
